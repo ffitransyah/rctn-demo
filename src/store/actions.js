@@ -1,6 +1,6 @@
 export const initiateMovies = () => {
   return (dispatch) => {
-    fetch('http://www.omdbapi.com/?apikey=5b45fb41&s=harry%20potter&type=movie')
+    fetch('https://www.omdbapi.com/?apikey=5b45fb41&s=harry%20potter&type=movie')
       .then((response) => response.json())
       .then((movies) => {
         dispatch({
