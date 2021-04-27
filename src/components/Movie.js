@@ -9,7 +9,7 @@ const Movie = () => {
     fetch(`http://www.omdbapi.com/?apikey=5b45fb41&i=${id}`)
       .then((response) => response.json())
       .then((movie) => setMovie(movie))
-  }, [])
+  })
 
   return (
     <div className="row">
