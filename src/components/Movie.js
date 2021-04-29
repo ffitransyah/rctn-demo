@@ -6,7 +6,7 @@ const Movie = () => {
   const { id } = useParams()
 
   useEffect(() => {
-    fetch(`http://www.omdbapi.com/?apikey=5b45fb41&i=${id}`)
+    fetch(`https://www.omdbapi.com/?apikey=5b45fb41&i=${id}`)
       .then((response) => response.json())
       .then((movie) => setMovie(movie))
   })
