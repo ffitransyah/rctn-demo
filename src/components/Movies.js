@@ -14,7 +14,7 @@ const Movies = () => {
             <img src={movie.Poster} className="card-img-top" alt="" />
             <div className="card-body">
               <h5 className="card-title">{ movie.Title }</h5>
-              <p className="card-text">{ movie.Year }, { movie.Genre }, { movie.Rated }</p>
+              <p className="card-text">{ movie.Year }</p>
               <Link to={`/movie/${movie.imdbID}`} className="btn btn-sm btn-primary">Detail</Link>
               <Link to="/favorites" className="mx-3 btn btn-sm btn-warning">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-star" viewBox="0 0 16 16">
